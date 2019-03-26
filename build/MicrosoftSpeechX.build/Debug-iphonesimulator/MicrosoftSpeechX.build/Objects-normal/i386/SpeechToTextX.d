@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftSpeechX/SpeechToTextX.m \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/build/MicrosoftSpeechX.build/Debug-iphonesimulator/MicrosoftSpeechX.build/module.modulemap \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftSpeechX/SpeechToTextX.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechApi.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXAudioConfiguration.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXFoundation.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXAudioStream.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXAudioStreamFormat.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXConnection.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXRecognizer.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSessionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXRecognitionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXPropertyCollection.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechEnums.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXConnectionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXIntentRecognitionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXIntentRecognitionResult.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXRecognitionResult.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXIntentRecognizer.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechConfiguration.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXLanguageUnderstandingModel.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechRecognitionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechRecognitionResult.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechRecognizer.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXSpeechTranslationConfiguration.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXTranslationRecognizer.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXTranslationRecognitionResult.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXTranslationRecognitionEventArgs.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXTranslationSynthesisResult.h \
+  /Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftCognitiveServicesSpeech.framework/Headers/SPXTranslationSynthesisEventArgs.h
