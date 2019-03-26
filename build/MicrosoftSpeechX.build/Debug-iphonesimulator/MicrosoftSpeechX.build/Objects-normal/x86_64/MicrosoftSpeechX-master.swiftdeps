@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "578fa0ad9c091f9f019916d7ba82625b"
-build_time: [1553585307, 238094000]
-inputs:
-  "/Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechX/MicrosoftSpeechX/SpeechToTextXSwift.swift": [1553585295, 0]
