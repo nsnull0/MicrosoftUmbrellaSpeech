@@ -16,10 +16,13 @@
 
 @implementation SpeechToTextX
 
-- (void)startConfig:(NSString *)speechKey regionService:(NSString *)regionService {
+- (void)startConfig:(NSString *)speechKey
+      regionService:(NSString *)regionService {
   _speechConfiguration = [[SPXSpeechConfiguration alloc] initWithSubscription:speechKey region:regionService];
   if (!_speechConfiguration) {
     [_delegate errorHandler:COULD_NOT_LOAD_SPEECH_CONFIG];
+  }else{
+    [_speechConfiguration setPropertyTo:@"True" byId:SPXSpeechServiceResponseRequestDetailedResultTrueFalse];
   }
 }
 
@@ -31,8 +34,20 @@
     }else{
       __typeof(self) __weak _self = self;
       [_recognizer addRecognizingEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionEventArgs * event) {
-        [_self.delegate rawResponse:event];
+        SPXRecognitionResult *result = event.result;
+        [_self.delegate onPartialResponse:result.text];
       }];
+
+      [_recognizer addRecognizedEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionEventArgs * event) {
+        SPXRecognitionResult *result = event.result;
+        [_self.delegate action:[speech.properties getPropertyById:SPXSpeechServiceResponseRequestDetailedResultTrueFalse]];
+        [_self.delegate onFinishedResponse:result.text score:[result.properties getPropertyById:SPXSpeechServiceResponseJsonResult]];
+      }];
+
+      [_recognizer addCanceledEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionCanceledEventArgs * event) {
+        [_self stopRecognize];
+      }];
+      
     }
   }else{
     [_delegate errorHandler:SPEECH_CONFIG_NOT_READY];

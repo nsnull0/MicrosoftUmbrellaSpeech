@@ -18,7 +18,9 @@ typedef NS_ENUM(NSInteger, ErrorType) {
 @protocol SpeechToTextXProtocol
 @required
 -(void) errorHandler:(ErrorType)type;
--(void) rawResponse:(id)response;
+-(void) onPartialResponse:(NSString*)text;
+-(void) onFinishedResponse:(NSString*)text score:(NSString*)confidence;
+-(void) action:(NSString*)anyAction;
 @end
 
 @interface SpeechToTextX : NSObject

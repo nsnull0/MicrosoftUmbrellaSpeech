@@ -10,9 +10,7 @@ open class SpeechToTextXSwift : NSObject {
   
   var speechToTextXInstance: SpeechToTextX = SpeechToTextX()
   
-  public weak var delegate: SpeechToTextXProtocol?
-  
-  public func initConfiguration(speechKey: String, regionService: String) {
+  public func initConfiguration(speechKey: String, regionService: String, delegate: SpeechToTextXProtocol?) {
     speechToTextXInstance.startConfig(speechKey, regionService: regionService)
     speechToTextXInstance.delegate = delegate
   }
