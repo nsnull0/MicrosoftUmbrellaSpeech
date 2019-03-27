@@ -1,0 +1,38 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/yosephjoyz/Library/Developer/Xcode/DerivedData/MicrosoftSpeechX-brelnmxycbgvyzggzqizeyotgzhf/Build/Products/Debug-iphonesimulator/MicrosoftSpeechX.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MicrosoftSpeechX-Swift.h",
+          'external-contents': "/Users/yosephjoyz/Library/Developer/Xcode/DerivedData/MicrosoftSpeechX-brelnmxycbgvyzggzqizeyotgzhf/Build/Products/Debug-iphonesimulator/MicrosoftSpeechX.framework/Headers/MicrosoftSpeechX-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MicrosoftSpeechX.h",
+          'external-contents': "/Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechXX/MicrosoftSpeechX/MicrosoftSpeechX.h"
+        },
+        {
+          'type': 'file',
+          'name': "SpeechToTextX.h",
+          'external-contents': "/Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechXX/MicrosoftSpeechX/SpeechToTextX.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/yosephjoyz/Library/Developer/Xcode/DerivedData/MicrosoftSpeechX-brelnmxycbgvyzggzqizeyotgzhf/Build/Products/Debug-iphonesimulator/MicrosoftSpeechX.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/yosephjoyz/Documents/microsoft-speech-joyz/MicrosoftSpeechSwiftXX/MicrosoftSpeechXX/build/MicrosoftSpeechX.build/Debug-iphonesimulator/MicrosoftSpeechX.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+framework module MicrosoftSpeechX {
+  umbrella header "MicrosoftSpeechX.h"
+
+  export *
+  module * { export * }
+}
+
+module MicrosoftSpeechX.__Swift {
+    exclude header "MicrosoftSpeechX-Swift.h"
+}
