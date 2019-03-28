@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, ErrorType) {
 -(void) errorHandler:(ErrorType)type;
 -(void) onPartialResponse:(NSString*)text;
 -(void) onFinishedResponse:(NSString*)text score:(NSString*)confidence;
--(void) action:(NSString*)anyAction;
+-(void) onNoResponse;
 @end
 
 @interface SpeechToTextX : NSObject

@@ -35,17 +35,29 @@
       __typeof(self) __weak _self = self;
       [_recognizer addRecognizingEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionEventArgs * event) {
         SPXRecognitionResult *result = event.result;
+        
         [_self.delegate onPartialResponse:result.text];
       }];
-
       [_recognizer addRecognizedEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionEventArgs * event) {
         SPXRecognitionResult *result = event.result;
-        [_self.delegate action:[speech.properties getPropertyById:SPXSpeechServiceResponseRequestDetailedResultTrueFalse]];
-        [_self.delegate onFinishedResponse:result.text score:[result.properties getPropertyById:SPXSpeechServiceResponseJsonResult]];
+        NSString *jsonString = [result.properties getPropertyById:SPXSpeechServiceResponseJsonResult];
+        NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *resultProperties = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSArray *resultBestList = [resultProperties valueForKey:@"NBest"];
+        if ([resultBestList count] > 0) {
+          NSDictionary *resultBestDictionary = resultBestList.firstObject;
+          NSString *resultBestConfidence = [NSString stringWithFormat:@"%@",[resultBestDictionary valueForKey:@"Confidence"]];
+          NSString *resultBestLexical = [NSString stringWithFormat:@"%@", [resultBestDictionary valueForKey:@"Lexical"]];
+          [_self.delegate onFinishedResponse:resultBestLexical score:resultBestConfidence];
+          [_self stopRecognize];
+        }else{
+          [_self.delegate onNoResponse];
+        }
       }];
 
       [_recognizer addCanceledEventHandler:^(SPXSpeechRecognizer * speech, SPXSpeechRecognitionCanceledEventArgs * event) {
         [_self stopRecognize];
+        [_self.delegate onNoResponse];
       }];
       
     }

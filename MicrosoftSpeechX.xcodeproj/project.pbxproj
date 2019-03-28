@@ -26,8 +26,6 @@
 		64C3555A2248D255000B71C3 /* SpeechToTextX.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C355582248D255000B71C3 /* SpeechToTextX.m */; };
 		64C3555D2248D35F000B71C3 /* MicrosoftCognitiveServicesSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C3555C2248D35F000B71C3 /* MicrosoftCognitiveServicesSpeech.framework */; };
 		64C3555F2248D474000B71C3 /* SpeechToTextXSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3555E2248D474000B71C3 /* SpeechToTextXSwift.swift */; };
-		64C355612248D8BE000B71C3 /* MicrosoftCognitiveServicesSpeech.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64C3555C2248D35F000B71C3 /* MicrosoftCognitiveServicesSpeech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		64C355622248D8C2000B71C3 /* MicrosoftCognitiveServicesSpeech.framework in Resources */ = {isa = PBXBuildFile; fileRef = 64C3555C2248D35F000B71C3 /* MicrosoftCognitiveServicesSpeech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				64C355612248D8BE000B71C3 /* MicrosoftCognitiveServicesSpeech.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C355622248D8C2000B71C3 /* MicrosoftCognitiveServicesSpeech.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
